@@ -1,0 +1,225 @@
+/*start screens width*/
+/*mobiles*/
+@media (max-width:767px){
+   
+}
+/*tablets*/
+@media (min-width:768px){
+   
+}
+/*md screen*/
+@media (min-width:992px){
+   
+}
+/*large screen*/
+@media (min-width:1200px){
+   
+}
+
+/*end screen width*/
+
+/*start globals */
+*{
+    font-family: Verdana Tahoma, sans-serif;
+    color:#33393B;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/*end globals*/
+
+/*start framework*/
+/*mobiles*/
+@media (max-width:767px){
+  
+}
+/*tablets*/
+@media (min-width:768px){
+    .container{
+        width:768px;
+        margin:  auto;
+    }
+}
+/*md screen*/
+@media (min-width:992px){
+    .container{
+        width:992px;
+        margin:  auto;
+    }
+}
+/*large screen*/
+@media (min-width:1200px){
+    .container{
+        width:1200px;
+        margin:  auto;
+    }
+}
+/*end framework*/
+
+
+/*start navabr*/
+/*mobiles*/
+@media (max-width:767px){
+    .navbar{
+        background-color:rgba(135, 207, 235, 0.3);
+    }
+    .navbar .container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .navbar .links{
+        position: fixed;
+        z-index: 10;
+        background-color: #fff;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+    .navbar .links.hide{
+      transform: translate(100%);
+    }
+    .navbar .links.show{
+        position: fixed;
+        z-index: 10;
+        background-color: #fff;
+        right: 0;
+        top: 0;
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+    .navbar .links ul{
+        padding: 25px;
+        text-align: center;
+    }
+    .navbar .links ul li {
+        margin: 10px 0;
+    }
+    .navbar .links ul li a:hover{
+        color:#1DCFAD;
+    }
+    .navbar .links ul .close{
+        position: absolute;
+        top:10px;
+        left:10px;
+        font-size: 25px;
+        padding: 8px;
+        border:3px solid rgba(128, 128, 128, 0.473);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .navbar .links ul li{
+        padding: 10px;
+    }
+    .navbar .links ul li a{
+      padding: 5px;
+    }
+    .navbar .brand{
+     font-size: 25px;
+     width: 50%;
+     padding: 20px;
+    }
+    .navbar .brand>span{
+        color:#1DCFAD;
+    }
+   .navbar .toggle-btn{
+       display: block;
+       width: 50%;
+       text-align: right;
+       padding: 15px;
+       cursor: pointer;
+   }
+   .navbar .toggle-btn i{
+       border :3px solid gray;
+       padding: 5px;
+       border-radius: 5px;
+   }
+   .navbar .search{
+       display: none;
+   }
+}
+/*tablets*/
+@media (min-width:768px){
+ .navbar{
+     background-color: rgba(135, 207, 235, 0.3);
+ }
+    .navbar .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar .brand{
+        font-size: 25px;
+        width: 25%;
+        padding: 20px;
+       }
+       .navbar .brand>span{
+        color:#1DCFAD;
+    }
+   .navbar .links{
+    width: 55%;
+    padding: 25px;
+   }
+  .navbar .links ul{
+           display: flex;
+           flex-direction: row;
+           justify-content:flex-end;
+           padding: 10px;
+    }
+  .navbar .links ul .close{
+        display: none;
+    }
+    .navbar .links ul li{
+        margin: 0 4px;
+    }
+    .navbar .links ul li a{
+        padding: 15px 8px;
+        color:#33393B;
+    }
+    .navbar .links ul li a.active{
+        border-bottom: 2px solid #1DCFAD;
+        color:#1DCFAD;
+    }
+    .navbar .links ul li a:hover{
+        border-bottom: 2px solid #1DCFAD;
+        color:#1DCFAD;
+    }
+    .navbar .search{
+        width: 20%;
+        padding: 20px;
+    }
+    .navbar .search i{
+        font-size: 20px;
+        padding: 2px;
+    }
+    .navbar .search input{
+     padding: 12px;
+     width: 70%;
+     border:none;
+     background-color:#fff;
+     border-radius: 15px;
+    }
+    .navbar .search input:hover{
+        border:none;
+    }
+     .navbar .toggle-btn{
+        display: none;
+    }
+}
+/*md screen*/
+@media (min-width:992px){  
+}
+/*large screen*/
+@media (min-width:1200px){
+   
+}
+/*end navbar*/
+
+
