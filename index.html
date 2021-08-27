@@ -11,6 +11,19 @@
     <title>Dentest</title>
 </head>
 <body>
+<!--start loading screen-->
+<div class="loading hide">
+    <span class="one"></span> <span class="tow"></span> <span class="three"></span> <span class="four"></span>
+    <span class="five"></span>
+</div>
+<!--end loading screen-->
+
+<!--start up button-->
+  <div class="up-btn hide">
+      <i class="fas fa-arrow-up"></i>
+  </div>
+<!--end up button-->
+
 <!--start navbar-->
 <div class="navbar">
     <div class="container">
@@ -19,10 +32,10 @@
             <ul>
                 <i class="fas fa-times fas-2x close"></i>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">About</a></li>
+                <li><a  data-target="services">Services</a></li>
+                <li><a data-target="team">Team</a></li>
+                <li><a  data-target="contacts">Contacts</a></li>
+                <li><a  data-target="about">About</a></li>
             </ul>
         </div>
         <div class="search"> 
@@ -82,7 +95,7 @@
 <!--end auto slider-->
     
 <!--start about-->
-<div class="about">
+<div id="about" class="about">
     <div class="container">
 
     <div class="info">
@@ -107,7 +120,7 @@
 <!--end about-->
 
 <!--satrt our features-->
-<div class="features">
+<div id="features" class="features">
    <div class="container">
        <h2><span>Our</span> Features</h2>
    </div>
@@ -210,7 +223,7 @@
 <!--end what our clients say-->
 
 <!--start our team-->
-<div class="team">
+<div id="team" class="team">
     <div class="container">
         <h2><span>Our </span> Team </h2>
     </div>
@@ -277,7 +290,7 @@
 <!--end our team-->
 
 <!--satrt our services-->
-<div class="services">
+<div id="services" class="services">
     <div class="container">
         <div class="heading">
            <h2><span>Our </span> Services</h2>
@@ -328,7 +341,7 @@
 <!--end our services-->
 
 <!---start our Contacts-->
-<div class="contacts">
+<div id="contacts" class="contacts">
     <div class="container">
         <div class="picture">
             <img src="imgs/Dr.-Shady-Ali-Hussein-Best-Dentists-in-Egypt.jpg" alt="">
@@ -352,9 +365,7 @@
     <p>&copy 2021 <span>Saad Medical </span> All rights reserved.</p>
 </div>
 <!--end our footer-->
-<div class="">
- 
-</div>
+
 <script src="js/script.js"></script>
 </body>
 </html>
