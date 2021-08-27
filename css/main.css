@@ -19,6 +19,7 @@
 /*end screen width*/
 
 /*start globals */
+
 *{
     font-family: Verdana Tahoma, sans-serif;
     color:#33393B;
@@ -32,6 +33,7 @@ ul{
 a{
     text-decoration: none;
     color:black;
+    cursor: pointer;
 }
 /*end globals*/
 
@@ -63,6 +65,80 @@ a{
 }
 /*end framework*/
 
+/*start loading screen*/
+.loading
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(161, 153, 153);
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.loading>span{
+    width: 15px;
+    height: 30px;
+    background-color: #1D5EA8;
+    display: inline-block;
+    margin: 0 5px;
+    animation: waving 1s 4 ease-in-out;
+}
+.loading.hide{
+    display: none;
+}
+.loading span.tow{
+   animation-delay: .2s;
+}
+.loading span.three{
+    animation-delay: .4s;
+}
+.loading span.four{
+    animation-delay: .6s;
+}
+.loading span.five{
+    animation-delay: .8s;
+}
+
+@keyframes waving{
+    0%{
+        height: 70px;
+    }
+    50%{
+        height: 30px;
+       
+    }
+    75%{
+
+    }
+}
+/*end loading screen*/
+
+/*start up button*/
+.up-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    position: fixed;
+    z-index: 9999;
+    right: 1%;
+    bottom: 5%;
+    text-align: center;
+    line-height: 30px;
+background-color: rgb(3, 3, 29);
+cursor: pointer;
+}
+.up-btn i{
+    color:#fff;
+}
+.up-btn.hide{
+    display: none;
+}
+/*end up button**/
 
 /*start navabr*/
 .navbar .brand i{
@@ -820,6 +896,3 @@ cursor: pointer;
     color:#1DCFAD
 }
 /*end our footer*/
-.space{
-    height: 1000px;
-}
